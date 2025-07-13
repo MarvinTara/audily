@@ -14,7 +14,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Slider } from "@/components/ui/slider";
-import { SONGS } from "./songs/songs";
+import { SONGS } from "./songs";
 import { Play } from "lucide-react";
 import { SkipBack } from "lucide-react";
 import { SkipForward } from "lucide-react";
@@ -135,7 +135,7 @@ function App() {
     <div className="app bg-sky-400 h-dvh w-screen">
       <img
         className={`fixed inset-1/2 -translate-1/2 scale-300 blur-sm cover-pic h-full object-cover rounded-lg`}
-        src={"/src/posters/" + resoleCoverFileName(currentSong)}
+        src={"/posters/" + resoleCoverFileName(currentSong)}
         alt={currentSong?.title + "-cover"}
         style={{ opacity: 0.3 + 0.45 * (1 - time / duration) }}
       />
@@ -161,14 +161,14 @@ function App() {
           <div className="pic p-3 w-50 aspect-square sm:w-100">
             <img
               className="cover-pic w-full object-cover rounded-lg"
-              src={"/src/posters/" + resoleCoverFileName(currentSong)}
+              src={"/posters/" + resoleCoverFileName(currentSong)}
               alt={currentSong?.title + "-cover"}
               style={{ boxShadow: "0 0 10px red" }}
             />
           </div>
           <audio
             ref={audioElm}
-            src={"/src/songs/" + resolveSongFileName(currentSong)}
+            src={"/songs/" + resolveSongFileName(currentSong)}
           />
         </div>
         <div className="controls absolute bottom-0 w-full max-w-100 p-2 bg-red-300 flex flex-col gap-3">
