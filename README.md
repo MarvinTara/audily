@@ -1,5 +1,7 @@
 # Audily
 
+#### Video Demo:  <URL https://youtu.be/VZplbzP7hMk>
+
 Audily is a modern web application designed to provide users with an immersive audio experience. It features a collection of songs and posters, allowing users to explore and enjoy music visually and audibly.
 
 ## Features
